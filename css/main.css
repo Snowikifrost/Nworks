@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+/*
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    #63b7e6 - синий
+    #6a6a6a - темный
+    #999 - серый
+contaienr 1180
+ */
+ /*  НАВИГАЦИЯ */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 84px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Параметры тени */
+    padding: 10px;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-flex-cont {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    color: #58595c;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.logo::before {
+    content: '';
+    background-color: #63b7e6;
+    display: inline-block;
+    height: 35px;
+    width: 3px;
+    position: absolute;
+    top:0;
+    left:-5px;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    background-color: #63b7e6;
+    display: inline-block;
+    height: 3px;
+    width: 35px;
+    left: -10px;
+}
+
+nav .container ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 0;
+}
+
+nav .container ul li {
+    display: inline-block;
+}
+ul li a {
+    display: block;
+    margin: 5px;
+    padding: 10px 15px;
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+ul li a:hover {
+    background: #63b7e6;
+    border-radius: 50px 50px 50px 50px;
+    color: #fff;
+}
+.active{
+  background: #63b7e6;
+  border-radius: 50px 50px 50px 50px;
+  color: #fff;
+}
+/* ХИРО СЕКЦИЯ */
+.main {
+    height: 110vh;
+    width: 100%;
+    background-color: #63b7e6;
+}
+/* filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* МЕДИА ЗАПРОСЫ */
+@media only screen and (max-width: 1200px) {
+    .container {width: 1000px;}
+   }
+@media only screen and (max-width: 1000px) {
+    .container {width: 800px;}
+   }
