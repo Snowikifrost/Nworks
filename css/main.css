@@ -11,6 +11,14 @@
     #999 - серый
 contaienr 1180
  */
+ *{
+     padding: 0;
+     margin: 0;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
  /*  НАВИГАЦИЯ */
 nav {
     position: fixed;
@@ -19,6 +27,7 @@ nav {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.7); /* Параметры тени */
     padding: 10px;
+    z-index: 100;
 }
 
 .container {
@@ -26,6 +35,7 @@ nav {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    height: 100%;
 }
 
 .nav-flex-cont {
@@ -43,8 +53,11 @@ nav {
     color: #58595c;
     font-family: 'Source Sans Pro', sans-serif;
     cursor: pointer;
+    transition: all 1s ease;
 }
-
+.logo:hover{
+    opacity: 0.7;
+}
 .logo::before {
     content: '';
     background-color: #63b7e6;
@@ -90,7 +103,7 @@ ul li a {
 
 }
 
-ul li a:hover {
+nav .container ul li a:hover {
     background: #63b7e6;
     border-radius: 50px 50px 50px 50px;
     color: #fff;
@@ -101,20 +114,86 @@ ul li a:hover {
   color: #fff;
 }
 /* ХИРО СЕКЦИЯ */
-.main {
-    height: 110vh;
+/*  */
+
+.hero{
     width: 100%;
+    height: 100vh;
     background-color: #63b7e6;
 }
-/* filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(-5deg) saturate(3.5); */
-
-
-
-
-
-
-
-
+.flex-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.hero-title h1{
+    padding-top:35%;
+    padding-bottom: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+}
+.hero-title h1::after{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    bottom: 35px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 2px;
+    background: #fff;
+}
+.hero-title p{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size:20px;
+    font-weight: 500;
+    justify-content: center;
+    padding-left:30%;
+}
+p i{ /*сердечко*/
+    margin-left: 5px;
+    color:red;
+    transition: all 2s ease;
+}
+p i:hover{
+    color:#E720A1;
+    transform: rotate(360deg)
+}
+.hero-title a{
+    text-decoration: none;
+    padding: 20px 45px;
+    background-color: #fff;
+    color:#63b7e6;
+    border-radius: 10px;
+    position: relative;
+    left: 33%;
+    top: 80px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+/* .hero-title a:hover{
+   ЧТО НИТЬ ДОБАВИТЬ
+} */
+.flex-hero img{
+    position: absolute;
+    bottom: 0px;
+    border-radius: 3% 3% 0 0;
+    filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(150deg) saturate(3.5);
+    transition: filter 2s;
+}
+.flex-hero img:hover{
+    filter: none;
+}
+/* О НАС */
+.about-us{
+    width: 100%;
+    height: 2950px;
+}
 
 
 
