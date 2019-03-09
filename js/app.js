@@ -1,45 +1,64 @@
-(function($){
-    
-    $(document).ready(function(){
+(function ($) {
+
+    $(document).ready(function () {
+        //прозрачная навигация вверху страницы
+        function Header(){
+            if($(window).scrollTop() == 0){
+                $('nav').addClass('top');
+            } else {
+                $('nav').removeClass('top');
+            }
+        };
+        Header();
+        $(window).on('load scroll', Header);
+
 
         var lpNav = $('nav .container ul');
-        // При клике на ссылку в меню
         lpNav.find('li a').on('click', function (e) {
-            // Определяем элемент на странице, на который ссылается ссылка по ID
             var linkTrgt = $($(this).attr('href'));
-            if (linkTrgt.length > 0) { // Если такой элемент присутствует
-                e.preventDefault(); // Отменяем переход по умолчанию
-                var offset = linkTrgt.offset().top; // Определяем отступ целевого элемента от начала документа
+            if (linkTrgt.length > 0) {
+                e.preventDefault(); 
+                var offset = linkTrgt.offset().top; 
                 $('body, html').animate({
                     scrollTop: offset - 44
-                }, 750); // Плавно скролим документ к этому месту
+                }, 750); 
             }
         });
+        $('.footer-top').on('click',function(){
+            $('html, body').animate({scrollTop: '0px'}, 800);
+        });
         /* Отслеживание активного экрана */
-// Описываем функцию, которая вычисляет активный экран
-function lpSetNavActive() {
-    // В этой переменной в конце each будет ID активного экрана
-    var curItem = '';
-    // Чтобы он туда попал, перебираем все экраны
-    $('section').each(function () {
-        // И если положение экрана от начала страницы меньше текущего скролла
-        if ($(window).scrollTop() > $(this).offset().top - 150) {
-            curItem = $(this).attr('id'); // В переменную вносим ID этого экрана
+        
+        function lpSetNavActive() {
+            var curItem = '';
+            $('section').each(function () {
+                if ($(window).scrollTop() > $(this).offset().top - 60) {
+                    curItem = $(this).attr('id'); 
+                }
+            });
+            if (lpNav.find('li a.active').attr('href') != '#' + curItem || lpNav.find('li a.active').length == 0) {  
+                lpNav.find('li a.active').removeClass('active');
+                lpNav.find('li a[href="#' + curItem + '"]').addClass('active');
+            }
         }
-    });
-    // Далее, если href ссылки внутри активного пункта меню не совпадает с ID найденного нами активного экрана
-    // Либо активные элементы отсутствуют в меню
-    if (lpNav.find('li a.active').attr('href') != '#' + curItem || lpNav.find('li a.active').length == 0) {
-        // Удаляем класс у текущего активного элемента
-        lpNav.find('li a.active').removeClass('active');
-        // И добавляем класс active пункту, внутри которого лежит ссылка, у которой href совпал с ID активного экрана 
-        lpNav.find('li a[href="#' + curItem + '"]').addClass('active');
-   
-    }
-}
-// Вызываем эту функцию
-lpSetNavActive(); // Единожды при загрузке страницы
-$(window).on('load scroll', lpSetNavActive); // И каждый раз при скролле
+        lpSetNavActive();
+        $(window).on('load scroll', lpSetNavActive); 
+
+
+        //задаем функции слайдера, из-за инициализации до объявления
+        $('.sl-comments').on('changed.owl.carousel initialized.owl.carousel', function (e) {
+            $('.sl-icons .sl-icon-dot img').removeClass('active');
+            $('.sl-icons .sl-icon-dot img').eq(e.item.index).addClass('active');
+        });
+        //сам слайдер комментариев
+        $('.sl-comments').owlCarousel({
+            items: 1,
+            autoplay: true
+        });
+        //клики по картиночкам
+        $('.sl-icons .sl-icon-dot').on('click', function () {
+            $('.sl-comments').trigger('to.owl.carousel', $(this).index());
+        });
 
 
     })
@@ -48,5 +67,4 @@ $(window).on('load scroll', lpSetNavActive); // И каждый раз при с
 
 // ДОБАВЬ WOW.JS И ANIMATE
 //портфолио - табы
-//отзывы - слайдер
 //форму обратной связи рили что бы работала

@@ -12,8 +12,10 @@
         crossorigin="anonymous">
     <!-- Подключение Normalize-->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- Подключение Собственные стили-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Подключение Собственных стилей-->
     <link rel="stylesheet" href="css/main.css">
+    <!--Все скрипты-->
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
@@ -21,17 +23,17 @@
 
 <body>
 
-    <nav>
+    <nav class="top">
         <div class="container">
             <div class="nav-flex-cont">
                 <div class="logo">NWORKS</div>
                 <ul>
                     <li><a href="#hero" class="">home</a></li>
-                    <li><a href="#about">about us</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">faq</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="#about" class="">about us</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#faq">faq</a></li>
+                    <li><a href="#contact-us">contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +49,7 @@
         </div>
     </section>
     <section id="about">
-        <section class="about-us">
+        <div class="ab-us">
             <div class="container">
                 <div class="skills-cont">
                     <div class="skill-item">
@@ -76,8 +78,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="about-us-second">
+        </div>
+        <div class="about-us-second">
             <div class="container flex-about">
                 <div class="about-maket">
                     <img src="img/about1.png" alt="maket">
@@ -106,8 +108,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="about-us-rating">
+        </div>
+        <div class="about-us-rating">
             <div class="container flex-rating">
                 <div class="block-rating">
                     <i class="far fa-user"></i>
@@ -125,8 +127,8 @@
                     <p>FAVOURITES</p>
                 </div>
             </div>
-        </section>
-        <section class="about-us-logos">
+        </div>
+        <div class="about-us-logos">
             <div class="container flex-logos">
                 <h2>GREAT INTEGRATIONS WITH OTHERS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, cumque officiis? Tenetur rerum
@@ -143,7 +145,7 @@
                     <img src="img/logos/8.png" alt="logo8">
                 </div>
             </div>
-        </section>
+        </div>
     </section>
     <section id="portfolio">
         <div class="container flex-portf">
@@ -189,8 +191,217 @@
                 </div>
             </div>
         </div>
+        <div class="block-of-comments">
+
+            <div class="container ">
+                <div class="block-comments">
+                    <div class="owl-carousel sl-comments">
+                        <div class="comment braces">
+                            <p class="curly">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur
+                                aspernatur
+                                expedita modi soluta magnam voluptatum animi laborum nam accusantium, sapiente fuga
+                                nemo!
+                                Natus, itaque.</p>
+                            <span>Emma Watt, Google</span>
+                        </div>
+                        <div class="comment braces">
+                            <p class="curly">We find new ideas here!</p>
+                            <span>Andrei Walter, Dedsec</span>
+                        </div>
+                        <div class="comment braces">
+                            <p class="curly">I`m a batman!</p>
+                            <span>Batman, BATMAN</span>
+                        </div>
+                        <div class="comment braces">
+                            <p class="curly">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim impedit
+                                tempore amet libero aut?</p>
+                            <span>Walter White, teacher</span>
+                        </div>
+                        <div class="comment braces">
+                            <p class="curly">I am a super hero!</p>
+                            <span>Saitama, One-Punch-Man</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-of-icons">
+                    <div class="sl-icons">
+                        <div class="sl-icon-dot">
+                            <img src="img/portf/icon1.png" alt="">
+                        </div>
+                        <div class="sl-icon-dot">
+                            <img src="img/portf/icon2.jpg" alt="">
+                        </div>
+                        <div class="sl-icon-dot">
+                            <img src="img/portf/icon3.jpg" alt="">
+                        </div>
+                        <div class="sl-icon-dot">
+                            <img src="img/portf/icon4.jpg" alt="">
+                        </div>
+                        <div class="sl-icon-dot">
+                            <img src="img/portf/icon5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
+    <section id="pricing">
+        <div class="container flex-pricing">
+            <div class="pricing-title">
+                <h2>PRICING TABLE</h2>
+                <p>NO CREDIT CARD required for free sign up. You can change your account at any time.</p>  
+            </div>
+            <div class="pricing-cards">
+                <div class="one-card">
+                    <h3>FREE TRIAL</h3>
+                    <ul>
+                        <li>$0/month</li>
+                        <li>1 Website</li>
+                        <li>10 Keywords</li>
+                        <li>Keyword Discovery</li>
+                        <li>Competition Analysis</li>
+                        <li>All Ranked URLs</li>
+                        <li>International Support</li>
+                        <li>Social Media Tracking</li>
+                        <li>Email Summary Reports</li>
+                        <li>Awesome Support</li>
+                    </ul>
+                    <div class="btn">
+                        <span>BUY NOW</span>
+                    </div>
+                </div>
+                <div class="one-card">
+                    <h3>SMALL</h3>
+                    <ul>
+                        <li>$19/month</li>
+                        <li>Unlimited Website</li>
+                        <li>100 Keywords</li>
+                        <li>Keyword Discovery</li>
+                        <li>Competition Analysis</li>
+                        <li>All Ranked URLs</li>
+                        <li>International Support</li>
+                        <li>Social Media Tracking</li>
+                        <li>Email Summary Reports</li>
+                        <li>Awesome Support</li>
+                    </ul>
+                    <div class="btn">
+                        <span>BUY NOW</span>
+                    </div>
+                </div>
+                <div class="one-card hot">
+                    <h3>MEDIUM</h3>
+                    <ul>
+                        <li>$39/month</li>
+                        <li>Unlimited Website</li>
+                        <li>250 Keywords</li>
+                        <li>Keyword Discovery</li>
+                        <li>Competition Analysis</li>
+                        <li>All Ranked URLs</li>
+                        <li>International Support</li>
+                        <li>Social Media Tracking</li>
+                        <li>Email Summary Reports</li>
+                        <li>Awesome Support</li>
+                    </ul>
+                    <div class="btn">
+                        <span>BUY NOW</span>
+                    </div>
+                </div>
+                <div class="one-card">
+                    <h3>LARGE</h3>
+                    <ul>
+                        <li>$69/month</li>
+                        <li>Unlimited Website</li>
+                        <li>500 Keywords</li>
+                        <li>Keyword Discovery</li>
+                        <li>Competition Analysis</li>
+                        <li>All Ranked URLs</li>
+                        <li>International Support</li>
+                        <li>Social Media Tracking</li>
+                        <li>Email Summary Reports</li>
+                        <li>Awesome Support</li>
+                    </ul>
+                    <div class="btn">
+                        <span>BUY NOW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container faq-flex">
+            <div class="faq-title">
+                <h2>FREQUENTLY ASKED QUESTION</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, temporibus.</p>
+            </div>
+            <div class="flex-questions">
+                <div class="one-question">
+                    <h3>Does it work on a MAC or PC?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, sunt.</p>
+                </div>
+                <div class="one-question">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="one-question">
+                    <h3>Does it work on a MAC or PC?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, sunt.</p>
+                </div>
+                <div class="one-question">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="one-question">
+                    <h3>How many question i have?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, fugiat.</p>
+                </div>
+                <div class="one-question">
+                    <h3>Do you have training videos?</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <div class="container flex-contact">
+            <div class="contact-title">
+                <h2>KEEP IN TOUCH</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, non?</p>
+            </div>
+            <div class="contact-blocks">
+                <div class="contact-info">
+                    <h3>OUR ADRESS</h3>
+                    <p>House #44, Street road,New-York, 10909 Africa</p>
+                    <h3>CALL US</h3>
+                    <p>+888 99 22 44 66</p>
+                    <h3>EMAIL US</h3>
+                    <p>contactus@email.com</p>
+                </div>
+                <div class="contact-form">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-skype"></i>
+                <i class="fab fa-telegram"></i>
+            </div>
+            <div class="footer-copy">
+                &copy; Portfolio Landing Page 2019
+            </div>
+            <div class="footer-top">
+                <i class="fas fa-angle-up"></i>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
