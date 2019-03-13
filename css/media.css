@@ -1,0 +1,445 @@
+/* 1601 - 1920 px */
+@media screen and (max-width: 1920px) {}
+
+/* 1369 - 1600 px */
+@media screen and (max-width: 1600px) {
+    .hero-title h1 {
+        padding-top: 30%;
+    }
+}
+
+/* 961 - 1368 px */
+@media screen and (max-width: 1368px) {
+    .flex-hero img {
+        display: none;
+    }
+
+    .hero-title h1 {
+        padding-top: 50%;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .nav-flex-cont {
+        justify-content: space-around;
+    }
+
+    .flex-about {
+        flex-direction: column;
+    }
+
+    .about-maket {
+        justify-content: space-around;
+        width: 320px;
+    }
+
+    .about-maket .maket-title {
+        padding-top: 0;
+    }
+
+    .flex-about .about-maket:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .flex-about .about-maket:nth-child(2) .maket-title {
+        padding-left: 0;
+    }
+
+    .block-rating {
+        margin: 50px;
+    }
+
+    .logos-cont {
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+
+    .portf-items {
+        justify-content: space-around;
+    }
+
+    .block-of-icons {
+        left: 33%;
+    }
+
+    .pricing-cards {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+
+    .one-card {
+        margin-bottom: 50px;
+    }
+
+    .one-question {
+        padding-left: 5px;
+    }
+
+    .flex-questions {
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 370px;
+        justify-content: space-between;
+    }
+
+    .contact-blocks {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 610px;
+    }
+
+    .contact-form {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .block-comments {
+        width: 100%;
+    }
+}
+
+/* 769 - 960 px */
+@media screen and (max-width: 960px) {
+    ul li a {
+        padding: 10px;
+    }
+
+    .hero-title h1 {
+        padding-top: 60%;
+    }
+
+    .skills-cont {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .skill-item i {
+        font-size: 45px;
+    }
+
+    .skill-item h2 {
+        font-size: 35px;
+    }
+
+    .skill-item p {
+        font-size: 20px;
+    }
+
+    .about-maket {
+        margin-top: 0;
+        margin-bottom: 45px;
+    }
+
+    .flex-rating {
+        flex-direction: column;
+    }
+
+    .block-rating {
+        width: 500px;
+        margin: 10px;
+    }
+
+    .block-rating i {
+        font-size: 60px;
+        margin-top: 10%;
+    }
+
+    .block-rating span {
+        font-size: 35px;
+
+    }
+
+    .block-rating p {
+        font-size: 25px;
+    }
+
+    .flex-logos h2 {
+        margin: 100px auto;
+    }
+
+    .flex-portf h2 {
+        margin-top: 100px;
+    }
+
+    .portf-items {
+        margin-bottom: 70px;
+    }
+
+    .portf-items .item {
+        width: 200px;
+        height: 255px;
+    }
+
+    .portf-items .item img {
+        width: 200px;
+        height: 200px
+    }
+
+    .portf-items .item p {
+        font-size: 18px;
+        margin: 5px 25px;
+    }
+
+    .portf-items .item span {
+        top: 68%;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+    .block-of-icons {
+        left: 29%;
+    }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-flex-cont ul {
+        display: none;
+    }
+
+    .hero-title h1 {
+        text-align: center;
+    }
+
+    .block-rating {
+        max-width: 470px;
+    }
+
+    .flex-logos h2 {
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .logos-cont img {
+        width: 310px;
+        height: 200px;
+    }
+
+    .flex-portf ul li {
+        padding: 10px;
+    }
+
+    .block-of-icons {
+        left: 20%;
+    }
+
+    .block-comments .comment span {
+        left: 30%;
+    }
+
+    .pricing-title {
+        margin-top: 50px;
+    }
+
+    .one-card {
+        width: 330px;
+    }
+
+    .one-card h3 {
+        width: 330px;
+    }
+
+    .one-card ul {
+        width: 330px;
+    }
+
+    .one-card .btn {
+        width: 330px;
+    }
+
+    #faq {
+        height: 1100px;
+    }
+
+    .flex-questions {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .contact-form {
+        width: 460px;
+    }
+
+    .contact-info {
+        width: 400px;
+    }
+
+    .about-maket .maket-title {
+        width: 400px;
+    }
+
+    .about-maket .maket-title p {
+        width: 400px;
+    }
+
+    .about-maket img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+/* 320 - 480 px */
+@media screen and (max-width: 480px) {
+    container {
+        width: 90%;
+    }
+
+    .nav-flex-cont {
+        margin-top: 10px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .hero-title a {
+        left: 22%;
+    }
+
+    .hero-title p {
+        padding-left: 13%;
+    }
+
+    .skill-item p {
+        font-size: 17px;
+    }
+
+    .skill-item h2 {
+        font-size: 28px;
+    }
+
+    .skill-item i {
+        font-size: 35px;
+    }
+
+    .about-maket img {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .about-maket {
+        height: 830px;
+        justify-content: center;
+    }
+
+    .about-maket .maket-title p {
+        width: 300px;
+    }
+
+    .about-maket .maket-title {
+        width: 300px;
+    }
+
+    .block-rating {
+        max-width: 300px;
+        height: 220px;
+    }
+
+    .portf-items .item span {
+        top: 76%;
+    }
+
+    .portf-items .item p {
+        margin: 15px 25px;
+    }
+
+    .portf-items .item img {
+        width: 300px;
+        height: 290px;
+    }
+
+    .portf-items .item {
+        width: 300px;
+        height: 355px;
+    }
+
+    .block-comments .comment span {
+
+        left: 26%;
+
+    }
+
+    .block-of-icons .sl-icon-dot img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .one-card {
+        width: 270px;
+    }
+
+    .one-card h3 {
+        width: 270px;
+    }
+
+    .one-card ul {
+        width: 270px;
+    }
+
+    .one-card .btn {
+        width: 270px;
+    }
+
+    .flex-questions {
+        width: 290px;
+    }
+
+    .faq-flex .faq-title {
+        margin-top: 60px;
+    }
+
+    .faq-flex {
+        padding-bottom: 30px;
+        justify-content: start;
+    }
+
+    #faq {
+        height: 970px;
+    }
+
+    .contact-form {
+        width: 315px;
+    }
+
+    .contact-info {
+        width: 260px;
+    }
+
+    .ui-form {
+        padding: 60px;
+    }
+
+    .block-comments .comment p {
+        font-size: 30px;
+    }
+
+    .braces::before,
+    .braces::after,
+    .curly::before,
+    .curly::after {
+        display: none;
+    }
+}
